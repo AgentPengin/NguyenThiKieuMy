@@ -1,178 +1,23 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Giới Thiệu Kiều My 🐱</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-<style>
-    /* Thiết lập chung */
-    body {
-        background-color: #ffe6f2; /* Màu nền hồng phấn */
-        background-image: radial-gradient(#ffcce6 15%, transparent 16%), radial-gradient(#ffcce6 15%, transparent 16%);
-        background-size: 60px 60px;
-        background-position: 0 0, 30px 30px;
-        font-family: 'Nunito', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        color: #555;
-    }
-
-    /* Khung chứa nội dung chính (Cái thiệp) */
-    .card {
-        background-color: #ffffff;
-        width: 100%;
-        max-width: 500px;
-        padding: 40px;
-        border-radius: 30px;
-        box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
-        text-align: center;
-        position: relative;
-        border: 4px dashed #ffb3c6;
-        margin: 20px;
-    }
-
-    /* Tiêu đề */
-    h1 {
-        font-family: 'Fredoka One', cursive;
-        color: #ff85a2;
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        text-shadow: 2px 2px 0px #ffe0e9;
-    }
-
-    /* Các dòng thông tin */
-    .info-line {
-        background: #fff0f5;
-        margin: 10px 0;
-        padding: 12px;
-        border-radius: 15px;
-        text-align: left;
-        font-size: 1.1em;
-        transition: transform 0.2s;
-    }
-
-    .info-line:hover {
-        transform: scale(1.02);
-        background: #ffe6f0;
-    }
-
-    .info-line b {
-        color: #ff6b81;
-        display: inline-block;
-        width: 100px;
-    }
-
-    /* Phần bạn bè */
-    .friends-section {
-        margin-top: 30px;
-        border-top: 2px dashed #ffb3c6;
-        padding-top: 20px;
-    }
-
-    .friends-title {
-        color: #74b9ff;
-        font-weight: 800;
-        font-size: 1.2em;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-    }
-
-    /* Danh sách link bạn bè đẹp hơn */
-    .friend-links {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
-    }
-
-    .friend-btn {
-        text-decoration: none;
-        background-color: #81ecec;
-        color: #fff;
-        padding: 10px 20px;
-        border-radius: 50px;
-        font-weight: bold;
-        transition: all 0.3s;
-        box-shadow: 0 4px 0 #00cec9;
-    }
-
-    .friend-btn:hover {
-        background-color: #00cec9;
-        transform: translateY(2px);
-        box-shadow: 0 2px 0 #00b894;
-    }
-
-    /* Các hình trang trí mèo */
-    .cat-img {
-        width: 120px;
-        margin-bottom: -10px;
-    }
-
-    .cat-decoration {
-        position: absolute;
-        width: 80px;
-        z-index: 10;
-    }
-
-    /* Mèo ló đầu trên góc */
-    .cat-top-right {
-        top: -40px;
-        right: -20px;
-        transform: rotate(15deg);
-    }
-    
-    /* Chân mèo trang trí */
-    .paw-icon {
-        position: absolute;
-        opacity: 0.2;
-        width: 40px;
-        z-index: 0;
-    }
-
-</style>
+<title>Bài 10</title>
 </head>
 <body>
-
-<div class="card">
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExajFqOW44bnBxd3I5bTJnb2g0bnh4bm53bnB6bHFlbmZtZmZ6ZG9qeSZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/WXB88TeARFVvi/giphy.gif" class="cat-decoration cat-top-right" alt="Cute cat">
-
-    <img src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif" class="cat-img" alt="Mèo gật gù">
-    
-    <h1>Giới Thiệu Bản Thân</h1>
-
-    <div class="info-line">
-        <b>🐾 Họ tên:</b> Nguyễn Thị Kiều My
-    </div>
-    <div class="info-line">
-        <b>🎂 Năm sinh:</b> 2008
-    </div>
-    <div class="info-line">
-        <b>🏡 Địa chỉ:</b> Nam Ban - Lâm Hà, Lâm Đồng
-    </div>
-    <div class="info-line">
-        <b>📞 SĐT:</b> 0336262948
-    </div>
-    <div class="info-line">
-        <b>🎬 Sở thích:</b> Xem phim
-    </div>
-    <div class="info-line">
-        <b>✨ Ước mơ:</b> Có công việc ổn định ở cùng bố mẹ
-    </div>
-
-    <div class="friends-section">
-        <p class="friends-title">💕 Hội bạn thân cùng lớp 💕</p>
-        <div class="friend-links">
-            <a href="https://www.facebook.com/nguyen.linh.717623" target="_blank" class="friend-btn">Thuỳ Linh</a>
-            <a href="https://www.facebook.com/duong.khanh.hong.2024" target="_blank" class="friend-btn">Khánh Hồng</a>
-            <a href="https://www.facebook.com/thuy.loan.467892" target="_blank" class="friend-btn">Thúy Loan</a>
-        </div>
-    </div>
+<div>
+<h1 style="text-align:center; color:pink"> Giới thiệu bản thân </h1>
+<p><b>Em tên là:</b> Nguyễn Thị Kiều My</p>
+<p><b>Năm sinh:</b> 2008</p>
+<p><b>Địa chỉ:</b> Nam Ban-Lâm Hà, Lâm Đồng</p>
+<p><b>SĐT:</b> 0336262948</p>
+<p><b>Sở thích:</b> Xem phim </p>
+<p><b>Ước mơ:</b> có công việc ổn định ở cùng bố mẹ </p>
 </div>
-
+<div>
+<p style="color:blue"><b><u>Đây là những người bạn cùng lớp:</u></b><p>
+<p><a href="https://www.facebook.com/nguyen.linh.717623" target="_blank">Thuỳ Linh</a></p>
+<p><a href="https://www.facebook.com/duong.khanh.hong.2024" target="_blank">Khánh Hồng</a></p>
+<p><a href="https://www.facebook.com/thuy.loan.467892" target="_blank">Thúy Loan</a></p>
+</div>
 </body>
 </html>
